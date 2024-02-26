@@ -1,0 +1,38 @@
+:root {
+    --black: #1f1f1f;
+    --white: #fff;
+    --yellow: #026237;
+    --deep-yellow: #008a4c;
+    --deep-red: #b0332c;
+    --bg-yellow: #e3fbe1;
+    --btn-yellow: #c0ffc1;
+    --btn-deep-red: #ae7674;
+    --footer-yellow: #e9ffe9;
+    --grey: #d3d3d3aa;
+    --grey2: #737373;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --box-shadow-hover: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.3);
+  }
+
+.order, .payment, .time, .view, .bldg, .mop {
+    text-align: center;
+}
+
+.data-list button {
+    padding: 7px 20px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--deep-yellow);
+    background: var(--btn-yellow);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.data-list button:hover {
+    background: var(--deep-yellow);
+    color: var(--white);
+}
+
+.line {
+    padding: 7px 0;
+}

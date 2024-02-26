@@ -1,0 +1,126 @@
+:root {
+    --black: #1f1f1f;
+    --white: #fff;
+    --yellow: #026237;
+    --deep-yellow: #008a4c;
+    --deep-red: #b0332c;
+    --bg-yellow: #e3fbe1;
+    --btn-yellow: #c0ffc1;
+    --btn-deep-red: #ae7674;
+    --footer-yellow: #e9ffe9;
+    --grey: #d3d3d3aa;
+    --grey2: #737373;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --box-shadow-hover: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.3);
+  }
+
+.footer .top {
+    background-color: var(--footer-yellow);
+    padding: 10rem 9%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .footer .top .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  
+  .facebook {
+    color: #17A9FD;
+  }
+  .twitter {
+    color: #1DA1F2;
+  }
+  .instagram {
+    color: #C13584;
+  }
+  .footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    color: var(--white);
+    background-color: var(--deep-yellow);
+  }
+  
+  .footer .top .content p {
+    color: var(--grey2);
+    margin-top: 2rem;
+    width: 90%;
+  }
+  
+  .footer .top .link h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .top .link a {
+    display: inline-block;
+    color: var(--grey2);
+    margin-bottom: 1rem;
+  }
+  
+  .footer .top .link span {
+    color: var(--grey2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .footer .top .link span:hover {
+    transform: translateX(10px);
+    color: var(--grey2);
+  }
+  
+  .footer .top .link a {
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .footer .top .link a:hover {
+    color: var(--grey2);
+    transform: translateX(10px);
+  }
+  
+  .footer .top .link div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .top .link div img {
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 996px) {
+    .footer .top {
+      padding: 5rem 9%;
+      grid-template-columns: 1fr;
+    }
+  
+    .footer .top .content {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer .top {
+      width: 100%;
+    }
+    .footer .top .links {
+      grid-template-columns: 1fr;
+      gap: 3rem 0;
+    }
+  
+    .footer .top .link {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footer .bottom {
+      padding: 1.5rem;
+    }
+  }
+  

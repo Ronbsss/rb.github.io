@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7f3fdc4837.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="css/Log-sign.css" />
+    <title>LHS Log-in & Registartion Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="HomePage.html" class="sign-in-form">
+            <img src="img/CTG Logo.png" alt="Can - to - go Logo" width="55%" class="CTG">
+            <h2 class="title">Log-in</h2>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="E-mail Account" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="myInput" required/>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" onclick="myFunction()">Show Password
+            </div><br>
+            <div class="checkbox">
+              <input type="checkbox" id="requiredCheck" required><p>I accept the <a href="TermsAgreement.html" class="agreement">terms and agreement.</a>
+              </p>
+            </div>
+            <a href="HomePage.html"><input type="submit" value="Login" class="btn solid" /></a>
+            <p class="social-text">Didn't Have an Account? Sign-Up <span class="transparent" id="sign-up-btn">Here.</span></p>
+          </form>
+          <form action="Log-sign.html" class="sign-up-form">
+            <img src="img/CTG Logo.png" alt="Can - to - go Logo" width="55%" class="CTG">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Full Name" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="E-mail Account" required/>
+            </div>
+            <div class="input-field">
+              <i class="fa-sharp fa-solid fa-school"></i>
+              <input type="text" placeholder="Building Place" required/>
+            </div>
+            <div class="radio">
+              <h3>Select Your Canteen:</h3>
+            <input type="radio" value="Mathay Canteen" id="1stcanteen" name="canteenchoice" required>
+            <label for="1stcanteen">Mathay Canteen</label>
+            <input type="radio" value="Sb Canteen" id="2ndcanteen" name="canteenchoice" required>
+            <label for="2ndcanteen">Sb Canteen</label>
+          </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Already Have an Account? Log-In <span class="transparent" id="sign-in-btn">Here.</span></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <img src="img/LNQ.png" alt="" width="25%"><img src="img/logo.png" alt="" width="25%"> <img src="img/deped.png" alt="" width="24%">
+            <p>
+              Welcome to the Lagro High School, School Canteen Ordering System!
+            </p>
+          </div>
+          <img src="img/log.svg " class="image img" alt=""/>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <img src="img/LNQ.png" alt="" width="25%"><img src="img/logo.png" alt="" width="25%"> <img src="img/deped.png" alt="" width="24%">
+            <p>
+              Welcome to the Lagro High School, School Canteen Ordering System!
+            </p>
+          </div>
+          <img src="img/register.svg" class="image img" alt=""/>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/Log-sign.js"></script>
+  </body>
+</html>

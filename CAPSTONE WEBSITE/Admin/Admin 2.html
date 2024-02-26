@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="stylesheet" href="Admin1.css">
+    <link rel="stylesheet" href="Admin2.css">
+
+    <title>CTG ADMIN RECORD</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="logo.png" alt="">
+            </div>
+
+            <span class="logo_name">CTG Admin</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="Admin 1.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="Admin 2.html">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <span class="link-name">Record</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="fa-solid fa-bars sidebar-toggle"></i>                    
+        </div>
+
+        <div class="dash-content">
+            <div class="activity">
+                <div class="title">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span class="text">Recorded Orders</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data name">
+                        <span class="data-title">Name</span>
+                        <span class="data-list line">Ronald Benidict Samonte</span>
+                        <span class="data-list line">EIlyn Joie Reyes</span>
+                        <span class="data-list line">Erwyn Cruz</span>
+                        <span class="data-list line">Reggie Aguas</span>
+                        <span class="data-list line">Eduard Cinco</span>
+                        <span class="data-list line">Josh Martin Donaire</span>
+                        <span class="data-list line">Carl Janssen Zuniga</span>
+                    </div>
+                    <div class="data order">
+                        <span class="data-title">Number of Items Ordered</span>
+                        <span class="data-list line">5</span>
+                        <span class="data-list line">8</span>
+                        <span class="data-list line">12</span>
+                        <span class="data-list line">3</span>
+                        <span class="data-list line">5</span>
+                        <span class="data-list line">9</span>
+                        <span class="data-list line">7</span>
+                    </div>
+                    <div class="data payment">
+                        <span class="data-title">Mode of Payments</span>
+                        <span class="data-list line">Pick-up</span>
+                        <span class="data-list line">Pick-up</span>
+                        <span class="data-list line">Cash on Delivery</span>
+                        <span class="data-list line">Pick-up</span>
+                        <span class="data-list line">Cash on Delivery</span>
+                        <span class="data-list line">Cash on Delivery</span>
+                        <span class="data-list line">Cash on Delivery</span>
+                    </div>
+                    <div class="data time">
+                        <span class="data-title">Appointed Time</span>
+                        <span class="data-list line">8:00am</span>
+                        <span class="data-list line">8:15am</span>
+                        <span class="data-list line">9:50am</span>
+                        <span class="data-list line">8:30am</span>
+                        <span class="data-list line">10:14am</span>
+                        <span class="data-list line">7:27am</span>
+                        <span class="data-list line">12:30pm</span>
+                    </div>
+                    <div class="data view">
+                        <span class="data-title">View</span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                        <span class="data-list"><button onclick="alertToggle()">View</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="Admin.js"></script>
+        <script src="https://kit.fontawesome.com/7f3fdc4837.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LHS Billing Page</title>
+	<link rel="icon" type="image/png" href="img/logo.png"/>
+	<link href="css/BillingPage.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/Footer.css">
+</head>
+<body>
+	<header class="header">
+		<a href="HomePage.html" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+	  
+		<nav class="navbar">
+		  <a href="HomePage.html">Home</a>
+		  <a href="#foods">Foods</a>
+		  <a href="#about">About Us</a>
+		  <a href="FoodPage.html" class="btn">Make an Order</a>
+		</nav>
+	  
+		<ul class="ulclass">
+		<li class="cart-page"><a href="BillingPage.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+		  <li><img src="images/SAMONTE.jpg" alt="profile" class="profile" onclick="toggleMenu()"></li>
+		  <div class="sub-menu-wrap" id="subMenu">
+		  <div class="sub-menu">
+			<div class="user-info">
+			  <img src="images/SAMONTE.jpg" alt="profile">
+			  <h2>Rb Samonte</h2>
+			</div>
+			<hr>
+			  <a href="#" class="sub-menu-link">
+				<i class="fa-solid fa-user"></i>
+				<p>Edit Profile</p>
+				<span><i class="fa-solid fa-greater-than"></i></span>
+			  </a>
+			  <a href="#" class="sub-menu-link">
+				<i class="fa-solid fa-gear"></i>
+				<p>Settings & Privacy</p>
+				<span><i class="fa-solid fa-greater-than"></i></span>
+			  </a>
+			  <a href="Log-sign.html" class="sub-menu-link">
+				<i class="fa-solid fa-right-from-bracket"></i>
+				<p>Log-out</p>
+				<span><i class="fa-solid fa-greater-than"></i></span>
+			  </a>
+		  </div>
+		  </div>
+		</ul>
+		<!-- Hamburger -->
+		<div class="hamburger">
+		  <i class="fa-solid fa-burger"></i>
+		</div>
+	
+		</header>
+	<div class="form-container">
+	<section class="container">
+		<header>Billing Form</header>
+		<form action="#" class="form" onsubmit="alertMessage()">
+			<div class="gender-box">
+				<h3>Mode of Payment</h3>
+				<div class="gender-option">
+				  <div class="gender">
+					<input type="radio" id="check-cod" name="MOP" checked />
+					<label for="check-cod">Cash on Delivery</label>
+				  </div>
+				  <div class="gender">
+					<input type="radio" id="check-pup" name="MOP" />
+					<label for="check-pup">Pick-up</label>
+				  </div>
+				</div>
+			  </div>
+		  <div class="input-box">
+			<label>Full Name</label>
+			<input type="text" placeholder="Enter full name" required />
+		  </div>
+  
+		  <div class="input-box">
+			<label>Email Address</label>
+			<input type="text" placeholder="Enter email address" required />
+		  </div>
+  
+		  <div class="column">
+			<div class="input-box">
+			  <label>Phone Number</label>
+			  <input type="number" placeholder="Enter phone number" value="09" required />
+			</div>
+			<div class="input-box">
+			  <label>Suggested Time</label>
+			  <input type="time" value="08:30" required />
+			</div>
+		  </div>
+		  <div class="input-box address">
+			<label>Building Place</label>
+			<input type="text" placeholder="Enter building place eg. (Mathay BLDG, SB BLDG)" value="BLDG" required />
+			<input type="number" placeholder="Enter room number eg.(201, 205, 304)" max="3" required />
+		  </div>
+		
+	  </section>
+	</div>
+    <div class="wrapper">
+		<h1 class="cart-title">Ordered Foods</h1>
+		<div class="project">
+			<div class="cart-content">
+				<div class="cart-box">
+				<img src="Foods/food.png" class="cart-img">
+				<div class="detail-box">
+					<h3 class="cart-product-title">Food Item 1</h3>
+					<h4 class="cart-price">₱25</h4>
+					<p>Quantity: <input type="number" value="1" class="cart-quantity"></p>
+				</div>
+				<p class="cart-remove"><i aria-hidden="true" class="fa fa-trash"></i> Remove</p>
+				</div>
+				<div class="cart-box">
+					<img src="Foods/food.png" class="cart-img">
+					<div class="detail-box">
+						<h3 class="cart-product-title">Food Item 1</h3>
+						<h4 class="cart-price">₱25</h4>
+						<p>Quantity: <input type="number" value="1" class="cart-quantity"></p>
+					</div>
+					<p class="cart-remove"><i aria-hidden="true" class="fa fa-trash"></i> Remove</p>
+					</div>
+					<div class="cart-box">
+						<img src="Foods/food.png" class="cart-img">
+						<div class="detail-box">
+							<h3 class="cart-product-title">Food Item 1</h3>
+							<h4 class="cart-price">₱25</h4>
+							<p>Quantity: <input type="number" value="1" class="cart-quantity"></p>
+						</div>
+						<p class="cart-remove"><i aria-hidden="true" class="fa fa-trash"></i> Remove</p>
+					</div>
+			</div>
+			
+			<div class="right-bar total">
+				<hr>
+				<p><span class="total-title">Total</span> 
+					<span class="total-price">₱0</span></p>
+					<button onclick="alertMessage()"><i class="fa fa-shopping-cart"></i>Checkout</button>
+			</div>
+		</div>
+	</div>
+</form>
+
+<footer class="footer">
+	<div class="top">
+	  <div class="content">
+		<a href="" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+		<p>
+		  Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+		  porttitor consectetur pretium. Euismod imperdiet
+		</p>
+	  </div>
+
+	  <div class="links">
+		<div class="link">
+		  <h4>Contact Information</h4>
+		  <div>
+			<a href="#"><i class="fa-solid fa-location-dot"></i> Lagro Subd, Flores De Mayo street corner, Quezon City, Philippines, 1118</a>
+		  </div>
+		  <div>
+			
+			<a href="#"><i class="fa-solid fa-envelope"></i> lhsregistar@yahoo.com</a>
+		  </div>
+		</div>
+
+		<div class="link">
+		  <h4>Quick Links</h4>
+		  <a href="#">Services</a>
+		  <a href="#">About Us</a>
+		  <a href="#">Contact Us</a>
+		  <a href="#">Download</a>
+		</div>
+
+		<div class="link">
+		  <h4>Legal</h4>
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Term of Use</a>
+		  <a href="#">Conditions</a>
+		  <a href="#">Location</a>
+		</div>
+
+		<div class="link">
+		  <h4>Connect with Us</h4>
+		  <div>
+			<span><i class="fa-brands fa-instagram instagram"></i>&nbsp Instagram</span>
+		  </div>
+		  <div>
+			<span><i class="fa-brands fa-twitter twitter"></i> Twitter</span>
+		  </div>
+		  <div>
+			<span><i class="fa-brands fa-facebook facebook"></i> Facebook</span>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="bottom">
+	  <p>© 2023, Created by (Group 1) 12 - Rossum (Online School Based Canteen System)</p>
+	</div>
+  </footer>
+	<script src="js/BillingPage.js"></script>
+	<script src="js/ProfileNav.js"></script>
+	<script src="https://kit.fontawesome.com/7f3fdc4837.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LHS Home Page</title>
+    <!-- StyleSheets -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/HomePage.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="HomePage.html" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+    
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#foods">Foods</a>
+        <a href="#about">About Us</a>
+        <a href="FoodPage.html" class="btn">Make an Order</a>
+      </nav>
+    
+      <ul class="ulclass">
+        <li class="cart-page"><a href="BillingPage.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li><img src="images/SAMONTE.jpg" alt="profile" class="profile" onclick="toggleMenu()"></li>
+        <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="images/SAMONTE.jpg" alt="profile">
+            <h2>Rb Samonte</h2>
+          </div>
+          <hr>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-user"></i>
+              <p>Edit Profile</p>
+              <span><i class="fa-solid fa-greater-than"></i></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-gear"></i>
+              <p>Settings & Privacy</p>
+              <span><i class="fa-solid fa-greater-than"></i></span>
+            </a>
+            <a href="Log-sign.html" class="sub-menu-link">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <p>Log-out</p>
+              <span><i class="fa-solid fa-greater-than"></i></span>
+            </a>
+        </div>
+        </div>
+      </ul>
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <i class="fa-solid fa-burger"></i>
+      </div>
+  
+      </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h1>Order <span class="red">Your Product</span> <span class="yellow">Easier & Faster.</span></h1>
+        <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+         Quos nisi alias pariatur cum veniam, earum harum mollitia ut odit sequi vitae voluptatum sunt.
+        </p>
+        <a href="#" class="home-btn">Go to Menu</a>
+      </div>
+      <div class="image">
+        <img src="./images/Home Page.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="top">
+        <h2>Why <span class="red">We are</span> <span class="yellow">the Best</span></h2>
+        <p>
+          Lorem ipsum is placeholder text commonly used in the graphic, print,
+          and publishing industries for previewing layouts and visual mockups.
+          Lorem ipsum is placeholder.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="box">
+          <img src="./images/Easy to use.svg" alt="" />
+          <h4><span class="yellow">Friendly</span> Usage</h4>
+          <p>
+            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+            in netus.
+          </p>
+          <a href="#" class="arrow">View More <img src="./images/btn-arrow.svg" alt=""/> </a>
+        </div>
+        <div class="box">
+          <img src="./images/Safe Foods.svg" alt="" />
+          <h4><span class="yellow">Safe and Healthy</span> Foods</h4>
+          <p>
+            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+            in netus.
+          </p>
+          <a href="#" class="arrow">View More <img src="./images/btn-arrow.svg" alt=""/> </a>
+        </div>
+        <div class="box">
+          <img src="./images/safe-transactions.svg" alt="" />
+          <h4><span class="yellow">Safe</span> Transactions</h4>
+          <p>
+            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+            in netus.
+          </p>
+          <a href="#" class="arrow">View More <img src="./images/btn-arrow.svg" alt=""/> </a>
+        </div>
+      </div>
+    </section>
+
+<!-- Featured Products -->
+<h1 class="h1text" id="foods">Featured Products</h1>
+<div class="container-feature">
+        
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div> 
+  
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+  
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="Foods/food.png" alt="...">
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="card-content">
+          <h3>Food Item</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsam rem esse iusto, autem a?</p>
+          <button class="add-to-cart">
+              Add To Cart
+          </button>
+      </div>
+  </div>
+</div>
+    <!-- About #1 -->
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images/Easy to use.svg" alt="" />
+      </div>
+      <div class="content">
+        <h3>Easy to use <span class="red">anytime</span> <span class="yellow">and anywhere</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+          porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+          in netus.
+        </p>
+        <a href="#" class="btn">Sign-up Now</a>
+      </div>
+    </section>
+
+    <!-- About #2 -->
+    <section class="about about-2">
+      <div class="content">
+        <h3>
+          Safe foods <span class="red">for you</span> <span class="yellow">and your friends</span>
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+          porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+          in netus.
+        </p>
+        <a href="#" class="btn">Make an Order</a>
+      </div>
+
+      <div class="image">
+        <img src="images/Safe Foods.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- About #3 -->
+    <section class="about about-3" style="gap: 3rem 13rem">
+      <div class="image">
+        <img src="images/safe-transactions.svg" alt="" />
+      </div>
+
+      <div class="content">
+        <h3>Safe transactions <span class="red">in</span> <span class="yellow">every order</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+          porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
+          in netus.
+        </p>
+        <a href="#" class="btn">Track Now</a>
+      </div>
+    </section>
+    <h1 class="h1text" id="foods">Our Project <span class="red">Team</span> <span class="yellow">Members</span></h1>
+    <div class="container-member">
+    <div class="slide-container swiper">
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/SAMONTE.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Ronald Benidict Samonte</h2>
+                      <br>
+                      <p class="description">Project Manager</p>
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/REYES.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Eilyn Joie Reyes</h2>
+                      <br>
+                      <p class="description">Assistant Project Manager</p>
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/CRUZ.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Erwyn Cruz</h2>
+                      <br>
+                      <p class="description">System analyst</p>
+
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/AGUAS.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Reggie Aguas</h2>
+                      <br>
+                      <p class="description">I.T Support</p>
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/DONAIRE.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Josh Martin Donaire</h2>
+                      <br>
+                      <p class="description">I.T Document Specialist</p>
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/CINCO.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Eduard Cinco</h2>
+                      <br>
+                      <p class="description">I.T Document Specialist</p>
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/ZUNIGA.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Carl Janssen Zuniga</h2>
+                      <br>
+                      <p class="description">I.T Document Specialist</p>
+
+                  </div>
+              </div>
+              <div class="card-slider swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image-slider">
+                          <img src="images/GONEDA.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content-slider">
+                      <h2 class="name">Mamerto Goneda</h2>
+                      <br>
+                      <p class="description">Research Adviser</p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+</div>
+    <!-- App -->
+    <section class="app" id="contact">
+      <div class="image">
+        <img src="images/App.png" alt="" />
+      </div>
+      <div class="content">
+        <h3>Place your order through our app</h3>
+        <p>
+          You can easily place your order using our mobile app. Now you can
+          download our app for both IOS and Android mobiles.
+        </p>
+        <div class="links">
+          <img src="./images/app-store.png" alt="" class="image1"/>
+          <img src="./images/google-play.png" alt="" class="image1"/>
+        </div>
+      </div>
+    </section>
+    <h1 class="h1text">Most Freaquently <span class="red">Asked</span> <span class="yellow">Questions</span></h1>
+    <div class="container1">
+    <div class="faqcontent">
+      <!-- Accordion Heading One -->
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-1" checked>
+        <label for="tab-1">
+          <span>F.A.Q #1</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+        </div>
+      </div>
+      <!-- Accordion Heading Two -->
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-2">
+        <label for="tab-2">
+          <span>F.A.Q #2</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+        </div>
+      </div>
+      <!-- Accordion Heading Three -->
+      <div class="parent-tab tab-3">
+        <input type="radio" name="tab" id="tab-3">
+        <label for="tab-3" class="tab-3">
+          <span>F.A.Q #3</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <!-- Sub Heading One -->
+          <div class="child-tab">
+            <input type="checkbox" name="sub-tab" id="tab-4">
+            <label for="tab-4">
+              <span>Sub Heading One</span>
+              <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="sub-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
+            </div>
+          </div>
+          <!-- Sub Heading Two -->
+          <div class="child-tab">
+            <input type="checkbox" name="sub-tab" id="tab-5">
+            <label for="tab-5">
+              <span>Sub Heading Two</span>
+              <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="sub-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Heading Four -->
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-6">
+        <label for="tab-6">
+          <span>F.A.Q #4</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us-->
+  <section class="whole-form">
+  <div class="wrapper-form">
+    <h1>Send <span class="red">us a</span> <span class="yellow">Message</span></h1>
+    <form action="#">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="phone" placeholder="Enter your phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="contact" placeholder="Reason of contacting">
+          <i class="fa-regular fa-circle-question"></i>
+        </div>
+      </div>
+      <div class="message">
+        <textarea name="message" placeholder="Write your message"></textarea>
+        <i class="fa-solid fa-comment-dots"></i>
+      </div>
+      <div class="button-area">
+        <button type="submit">Send Message</button>
+        <span></span>
+      </div>
+    </form>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="content">
+          <a href="" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+          <p>
+            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+            porttitor consectetur pretium. Euismod imperdiet
+          </p>
+        </div>
+
+        <div class="links">
+          <div class="link">
+            <h4>Contact Information</h4>
+            <div>
+              <a href="#"><i class="fa-solid fa-location-dot"></i> Lagro Subd, Flores De Mayo street corner, Quezon City, Philippines, 1118</a>
+            </div>
+            <div>
+              
+              <a href="#"><i class="fa-solid fa-envelope"></i> lhsregistar@yahoo.com</a>
+            </div>
+          </div>
+
+          <div class="link">
+            <h4>Quick Links</h4>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Download</a>
+          </div>
+
+          <div class="link">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+            <a href="#">Conditions</a>
+            <a href="#">Location</a>
+          </div>
+
+          <div class="link">
+            <h4>Connect with Us</h4>
+            <div>
+              <span><i class="fa-brands fa-instagram instagram"></i>&nbsp Instagram</span>
+            </div>
+            <div>
+              <span><i class="fa-brands fa-twitter twitter"></i> Twitter</span>
+            </div>
+            <div>
+              <span><i class="fa-brands fa-facebook facebook"></i> Facebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>© 2023, Created by (Group 1) 12 - Rossum (Online School Based Canteen System)</p>
+      </div>
+    </footer>
+
+
+    <!-- Go To Top -->
+    <div class="scroll-top">
+      <img src="./images/arrow-up-outline.svg" alt="" />
+    </div>
+    <!-- Scripts -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f3fdc4837.js" crossorigin="anonymous"></script>
+    <script src="js/HomePage.js"></script>
+    <script src="js/ProfileNav.js"></script>
+    
+  </body>
+</html>

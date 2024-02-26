@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LHS Food page</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/FoodPage.css">
+  <link rel="stylesheet" href="css/Footer.css">
+  
+</head>
+<body>
+
+   <header class="header">
+      <a href="HomePage.html" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+
+      <nav class="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="FoodPage.html">Foods</a>
+        <a href="HomePage.html">About Us</a>
+        <a href="FoodPage.html" class="btn">Make an Order</a>
+      </nav>
+
+      <ul class="ulclass">
+        <li class="cart-page"><a href="BillingPage.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li><img src="images/SAMONTE.jpg" alt="profile" class="profile" onclick="toggleMenu()"></li>
+          <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/SAMONTE.jpg" alt="profile">
+              <h2>Rb Samonte</h2>
+            </div>
+            <hr>
+              <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-user"></i>
+                <p>Edit Profile</p>
+                <span><i class="fa-solid fa-greater-than"></i></span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings & Privacy</p>
+                <span><i class="fa-solid fa-greater-than"></i></span>
+              </a>
+              <a href="Log-sign.html" class="sub-menu-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Log-out</p>
+                <span><i class="fa-solid fa-greater-than"></i></span>
+              </a>
+          </div>
+          </div>
+      </ul>
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <i class="fa-solid fa-burger"></i>
+      </div>
+
+      <div class="cart">
+        <h2 class="cart-title">Added to Cart</h2>
+        <div class="cart-content">
+
+        </div>
+      <div class="total">
+        <div class="total-title">Total Price</div>
+        <div class="total-price">₱0</div>
+      </div>
+      <button type="button" class="btn-buy">Check Out</button>
+      <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+
+    </header>
+
+  <div class="container">
+    <main>
+          <ul>
+            <li class="active"><a href="#" class="filter-btn" id="all">All</a></li>
+            <li><a href="#" class="filter-btn" id ="mathay">Mathay Canteen</a></li>
+            <li><a href="#" class="filter-btn" id ="sb">SB Canteen</a></li>
+          </ul>
+          <div class="filter-condition">
+            <span>sort</span>
+            <select name="" id="select">
+              <option value="Default">Default</option>
+              <option value="LowToHigh">Low to high</option>
+              <option value="HighToLow">High to low</option>
+            </select>
+          </div>
+        </main>
+    
+        <h1 class="h1text">The <span class="red">Food </span> <span class="yellow">Section</span></h1>
+    
+        <ul class="products items">
+         <li class="product filter-item all mathay">
+             <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+                 
+            </li>
+
+         <li class="product filter-item all mathay">
+             <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all mathay">
+             <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+             <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all mathay">
+             <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all mathay">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all mathay">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">MC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+         <li class="product filter-item all sb">
+            <div class="namePrice">
+                <img src="Foods/food.png" alt="" class="product-img">
+                 <h3 class="product-title">SBC Food Item</h3>
+                 <span class="price">₱20</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                 <button class="add-cart button-cart"> add to cart </button>
+             </div>
+         </li>
+
+     </ul>
+    
+    </div>
+    
+    </div>
+    <footer class="footer">
+        <div class="top">
+          <div class="content">
+            <a href="" class="logo">Can-<span class="red">to-</span><span class="yellow">Go!</span></a>
+            <p>
+              Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
+              porttitor consectetur pretium. Euismod imperdiet
+            </p>
+          </div>
+    
+          <div class="links">
+            <div class="link">
+              <h4>Contact Information</h4>
+              <div>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Lagro Subd, Flores De Mayo street corner, Quezon City, Philippines, 1118</a>
+              </div>
+              <div>
+                
+                <a href="#"><i class="fa-solid fa-envelope"></i> lhsregistar@yahoo.com</a>
+              </div>
+            </div>
+    
+            <div class="link">
+              <h4>Quick Links</h4>
+              <a href="#">Services</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Download</a>
+            </div>
+    
+            <div class="link">
+              <h4>Legal</h4>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Term of Use</a>
+              <a href="#">Conditions</a>
+              <a href="#">Location</a>
+            </div>
+    
+            <div class="link">
+              <h4>Connect with Us</h4>
+              <div>
+                <span><i class="fa-brands fa-instagram instagram"></i>&nbsp Instagram</span>
+              </div>
+              <div>
+                <span><i class="fa-brands fa-twitter twitter"></i> Twitter</span>
+              </div>
+              <div>
+                <span><i class="fa-brands fa-facebook facebook"></i> Facebook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>© 2023, Created by (Group 1) 12 - Rossum (Online School Based Canteen System)</p>
+        </div>
+      </footer>
+    <script src="js/FoodPage.js"></script>
+    <script src="js/ProfileNav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f3fdc4837.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
